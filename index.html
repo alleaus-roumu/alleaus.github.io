@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>アルイーアス社会保険労務士事務所</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --ink: #222;
+  --bg: #f8f7f4;
+  --accent: #5a7a6a;
+  --light: #eeeae4;
+  --muted: #888;
+  --border: #ddd8d0;
+}
+html { scroll-behavior: smooth; }
+body { font-family: 'Noto Sans JP', sans-serif; background: var(--bg); color: var(--ink); font-weight: 300; line-height: 1.8; }
+
+nav {
+  padding: 20px 40px;
+  display: flex; align-items: center; justify-content: space-between;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+  position: sticky; top: 0; z-index: 10;
+}
+.nav-name { font-family: 'Noto Serif JP', serif; font-size: 14px; letter-spacing: 0.08em; }
+.nav-links { display: flex; gap: 28px; }
+.nav-links a { font-size: 12px; color: var(--muted); text-decoration: none; letter-spacing: 0.05em; }
+.nav-links a:hover { color: var(--accent); }
+
+.hero {
+  padding: 80px 40px 72px;
+  border-bottom: 1px solid var(--border);
+  max-width: 800px; margin: 0 auto;
+}
+.hero-label { font-size: 11px; letter-spacing: 0.2em; color: var(--accent); margin-bottom: 20px; }
+.hero h1 {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 30px; font-weight: 300; line-height: 1.9;
+  letter-spacing: 0.06em; margin-bottom: 24px;
+}
+.hero-sub { font-size: 13px; color: var(--muted); line-height: 2.2; max-width: 520px; }
+
+.section { padding: 64px 40px; border-bottom: 1px solid var(--border); max-width: 800px; margin: 0 auto; }
+.section-title {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 16px; font-weight: 400; letter-spacing: 0.12em;
+  color: var(--accent); margin-bottom: 32px;
+  padding-bottom: 12px; border-bottom: 1px solid var(--border);
+}
+
+.service-list { display: flex; flex-direction: column; }
+.service-item {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border);
+  display: grid; grid-template-columns: 180px 1fr; gap: 24px;
+}
+.service-item:last-child { border-bottom: none; }
+.service-name { font-size: 14px; font-weight: 400; letter-spacing: 0.05em; }
+.service-desc { font-size: 13px; color: var(--muted); line-height: 2; }
+
+.notice {
+  margin-top: 28px;
+  background: var(--light); border-left: 3px solid var(--border);
+  padding: 16px 20px; font-size: 12px; color: var(--muted); line-height: 2;
+}
+.notice strong { color: var(--ink); font-weight: 400; }
+
+.profile-grid { display: grid; grid-template-columns: 120px 1fr; gap: 16px 24px; font-size: 13px; }
+.profile-label { color: var(--muted); font-size: 12px; }
+
+.contact-desc { font-size: 13px; color: var(--muted); margin-bottom: 28px; line-height: 2; }
+.contact-buttons { display: flex; gap: 16px; flex-wrap: wrap; }
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 12px 28px; font-size: 13px; letter-spacing: 0.05em;
+  text-decoration: none; border: 1px solid var(--border);
+  background: white; color: var(--ink); transition: all 0.2s;
+}
+.btn:hover { border-color: var(--accent); color: var(--accent); }
+.btn-primary { background: var(--accent); color: white; border-color: var(--accent); }
+.btn-primary:hover { background: #4a6a5a; color: white; }
+.contact-note { margin-top: 20px; font-size: 11px; color: var(--muted); line-height: 2; }
+
+footer {
+  padding: 32px 40px;
+  text-align: center; font-size: 11px; color: var(--muted);
+  letter-spacing: 0.08em;
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-name">アルイーアス社会保険労務士事務所</div>
+  <div class="nav-links">
+    <a href="#services">業務内容</a>
+    <a href="#profile">プロフィール</a>
+    <a href="#contact">お問い合わせ</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <p class="hero-label">社会保険労務士 / キャリアコンサルタント</p>
+  <h1>労務と、キャリアの<br>専門家として。</h1>
+  <p class="hero-sub">
+    アルイーアス社会保険労務士事務所は、中小企業の労務管理サポートと、個人・企業向けのキャリアコンサルティング・セミナーを提供しています。
+  </p>
+</div>
+
+<div class="section" id="services">
+  <h2 class="section-title">業務内容</h2>
+  <div class="service-list">
+    <div class="service-item">
+      <div class="service-name">労務相談</div>
+      <div class="service-desc">解雇・残業・ハラスメントなど、労務問題全般のご相談に対応します。トラブルが起きる前の予防的なアドバイスも行っています。</div>
+    </div>
+    <div class="service-item">
+      <div class="service-name">就業規則の作成・改訂</div>
+      <div class="service-desc">就業規則・各種社内規程の作成・見直し。法改正への対応と、実態に合ったルール整備をサポートします。</div>
+    </div>
+    <div class="service-item">
+      <div class="service-name">人事・評価制度の整備</div>
+      <div class="service-desc">等級制度・評価制度・賃金制度の構築・見直し。採用から退職まで、人事管理の仕組みづくりをご支援します。</div>
+    </div>
+    <div class="service-item">
+      <div class="service-name">キャリアコンサルティング</div>
+      <div class="service-desc">転職・職場定着・再就職・ライフキャリアなど、個人のキャリア形成をサポートする個別面談を行っています。企業の従業員向けにも対応します。</div>
+    </div>
+    <div class="service-item">
+      <div class="service-name">セミナー・研修</div>
+      <div class="service-desc">企業向け・個人向けセミナーを承ります。労働法の基礎、ハラスメント防止、管理職研修、キャリアワークショップなど、ご要望に応じてカスタマイズします。</div>
+    </div>
+  </div>
+  <div class="notice">
+    <strong>社会保険・労働保険手続き（1号・2号業務）について</strong><br>
+    現在、新規のご依頼は受け付けておりません。既存のご契約分のみ対応しております。
+  </div>
+</div>
+
+<div class="section" id="profile">
+  <h2 class="section-title">プロフィール</h2>
+  <div class="profile-grid">
+    <div class="profile-label">氏名</div>
+    <div class="profile-value">今井 麻子（いまい あさこ）</div>
+    <div class="profile-label">資格</div>
+    <div class="profile-value">社会保険労務士（登録済）</div>
+    <div class="profile-label">事務所</div>
+    <div class="profile-value">アルイーアス社会保険労務士事務所</div>
+    <div class="profile-label">所在地</div>
+    <div class="profile-value">東京都中央区銀座（銀座オフィス）／東京都世田谷区（サブオフィス）</div>
+    <div class="profile-label">対応エリア</div>
+    <div class="profile-value">オンライン対応により全国対応可能</div>
+  </div>
+</div>
+
+<div class="section" id="contact">
+  <h2 class="section-title">お問い合わせ</h2>
+  <p class="contact-desc">
+    初回のご相談は無料です。お気軽にお問い合わせください。<br>
+    フォームまたはLINE公式アカウントよりご連絡いただけます。
+  </p>
+  <div class="contact-buttons">
+    <a href="https://forms.google.com/（あとで差し替え）" class="btn btn-primary" target="_blank">お問い合わせフォーム</a>
+    <a href="https://lin.ee/（あとで差し替え）" class="btn" target="_blank">LINE公式アカウント</a>
+  </div>
+  <p class="contact-note">
+    ※ フォームのご返信は営業日3日以内を目安にご連絡いたします。<br>
+    ※ 対応時間：平日 9:00〜18:00
+  </p>
+</div>
+
+<footer>
+  © 2025 アルイーアス社会保険労務士事務所　今井 麻子
+</footer>
+
+</body>
+</html>
